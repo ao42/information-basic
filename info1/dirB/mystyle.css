@@ -1,0 +1,14 @@
+h1 { color: #F0A121; }
+
+th, td {
+margin: 30px 30px;
+padding: 5px;
+border: medium solid #F0A181;
+}
+
+td.important { color: red; }
+
+dt.important { color: red; }
+
+
+td.cat { color: blue; }

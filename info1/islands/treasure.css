@@ -1,0 +1,20 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url("160436.png");
+    font-family: Helvetica , "游ゴシック" , "Yu Gothic" , sans-serif;
+}
+
+h1 {
+    font-size: 400%;
+    text-shadow: 0 0 8px rgba(0,0,0,0.8), 0 0 1em rgba(0,0,0,0.9);
+}
+
+div.opacity-container {
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(255,255,255,0.5);
+}
