@@ -1,0 +1,14 @@
+body {
+    background-color: #ffc;
+}
+
+th, td {
+margin: 30px;
+padding: 5px;
+border: medium solid #68CFC3;
+font-family: monospace;
+border:1 style="border-collapse:collapse;"
+}
+
+td.important { color: #CA3C6E; }
+dt.important { color: #CA3C6E; }
