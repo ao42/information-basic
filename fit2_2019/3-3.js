@@ -1,54 +1,53 @@
-function randam() {
-  var num = Math.random();
-  if (num < 0.1) {
-    alert("洋食")
-  }else if (num < 0.33 && num >= 0.1) {
-    alert("和食")
-  }else if (num < 0.66 && num >= 0.33) {
-    alert("中華")
-  }else {
-    alert("その他")
-  }
-}
-
 function ifelse() {
-  var num = Math.random();
-  if (num < 0.1) {
-    alert("洋食")
-  }else if (num < 0.33 && num >= 0.1) {
-    alert("和食")
-  }else if (num < 0.66 && num >= 0.33) {
-    alert("中華")
+  var wo = prompt("今日の夕飯の気分を（洋食/和食/中華/その他）で答えてください");
+  if (wo=="洋食") {
+    alert("ニューオリンズ")
+  }else if (wo=="和食") {
+    alert("松乃家")
+  }else if (wo=="中華") {
+    alert("大阪王将")
   }else {
-    alert("その他")
+    alert("improve")
   }
 }
 
-function switch() {
-  var word = prompt("今日の夕飯の気分を 洋食/和食/中華/その他 で答えてください");
+function SW() {
+  var word = prompt("今日の夕飯の気分を（洋食/和食/中華/その他/何でも）で答えてください");
 
-    switch (word) {
+    switch (word){
     case "洋食":
-    alert("素敵な一日を！");
+    alert("ニューオリンズ");
     break;
 
-    switch (word) {
+
     case "和食":
-    alert("素敵な一日を！");
+    alert("松乃家");
     break;
 
-    switch (word) {
+
     case "中華":
-    alert("素敵な一日を！");
+    alert("大阪王将");
     break;
 
-    switch (word) {
+
     case "その他":
-    alert("素敵な一日を！");
+    alert("imorove");
     break;
+
+    case "何でも":
+    var num = Math.random();
+    if (num < 0.1) {
+      alert("ニューオリ")
+    }else if (num < 0.33 && num >= 0.1) {
+      alert("松乃家")
+    }else if (num < 0.66 && num >= 0.33) {
+      alert("大阪王将")
+    }else {
+      alert("improve")
+    }    break;
 
     default:
-    alert("洋食/和食/中華/その他でお答えください");
-    break;
-    }
+    alert("（洋食/和食/中華/その他/何でも）でお応えください")
+        break;
+  }
 }
