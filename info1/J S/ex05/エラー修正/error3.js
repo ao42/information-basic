@@ -1,4 +1,0 @@
-ale
-rt
-("Hello, world!"
-);
