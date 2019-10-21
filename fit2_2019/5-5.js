@@ -1,24 +1,25 @@
 function b1(){
-  var a = document.getElementsByClassName("aaa");
-  alert(a.length);
-  var b = document.getElementsByClassName("bbb");
-  alert(b.length);
-  var c = document.getElementsByClassName("ccc");
-  alert(c.length);
-}
-
-function b3(){
-  var c = document.getElementsByClassName("ccc");
-  c.innerHTML = "みんな違ってみんないい。ただしてめえはだめ。"
-}
-
-function b3() {
-  var ab = document.getElementsByClassName("aaa bbb");
-  alert(ab.length);
+  var aaa = document.getElementsByClassName("aaa");
+  var an = (aaa.length);
+  for (i=0 ; i<=an ; i++){
+    aaa[i].innerHTML = "要素"+(i+1);
+  }
 }
 
 function b2(){
-  var $ccc = document.getElementsByClassName( "ccc" );
-  $ccc[i].innerHTML = 'みんな違ってみんないい。ただしてめえはだめ。';
+  var ccc = document.getElementsByClassName("ccc");
+  var cn = (ccc.length);
+  var mean = document.getElementById("mean").value;
+  for (i=0 ; i<=cn ; i++){
+    ccc[i].innerHTML = mean;
+  }
+}
 
+function b3() {
+  var aaabbb = document.getElementsByClassName("aaa bbb");
+  var abn = (aaabbb.length);
+  var mean = document.getElementById("mean").value;
+  for (i=0 ; i<=abn ; i++){
+    aaabbb[i].innerHTML = mean;
+  }
 }
