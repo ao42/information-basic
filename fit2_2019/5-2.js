@@ -1,12 +1,10 @@
 function hai(){
-  var n1 = prompt("名前を入力してください");
-  var n2 = prompt("前回とは違う名前を入力してください");
-  var n3 = prompt("前回とは違う名前を入力してください");
-  var n4 = prompt("前回とは違う名前を入力してください");
-  var n5 = prompt("前回とは違う名前を入力してください");
-  var n6 = prompt("前回とは違う名前を入力してください");
+  var name=[];
 
-  const name=[n1,n2,n3,n4,n5,n6];
+  for (i=0 ; i<6 ; i++){
+    name[i] = prompt("名前を入力してください");
+  }
+  
   name.sort();
   const divideLength = 3;
 
