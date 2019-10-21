@@ -7,7 +7,7 @@ function b1(){
   alert(c.length);
 }
 
-function b2(){
+function b3(){
   var c = document.getElementsByClassName("ccc");
   c.innerHTML = "みんな違ってみんないい。ただしてめえはだめ。"
 }
@@ -15,4 +15,10 @@ function b2(){
 function b3() {
   var ab = document.getElementsByClassName("aaa bbb");
   alert(ab.length);
+}
+
+function b2(){
+  var $ccc = document.getElementsByClassName( "ccc" );
+  $ccc[i].innerHTML = 'みんな違ってみんないい。ただしてめえはだめ。';
+
 }
