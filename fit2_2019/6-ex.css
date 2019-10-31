@@ -1,0 +1,16 @@
+p#li {
+   border: #ff1467 1px solid;
+   color: #ff1493;
+
+   width: 100px;
+   height: 30px;
+   border: red 5 px solid;
+   margin: 10px;
+   padding: 10px;
+
+   background-color: rgba(0, 0, 255, 0.3);
+
+   text-shadow: 3px 3px 2px #0000ff;
+
+   text-align: center;
+ }
