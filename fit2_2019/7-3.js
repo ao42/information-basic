@@ -29,18 +29,7 @@ function Dr() {
   ctx.fill();
   ctx.stroke();
 
-  var n_in = 0; // 円内
-
-  for(var i = 0; i < nsu; i++){
-    var x = Math.random();
-    var y = Math.random();
-    var r = Math.sqrt(x * x + y * y);
-
-    if(r < 1){
-      // 内側
-      n_in++;
-    }
-  }
-
-  pai.innerHTML = "π="+(result)
+var l = 2 * r * Math.sin(Math.PI/nsu)*nsu;
+var PI = nsu*Math.sin(Math.PI/nsu);
+pai.innerHTML = "π="+(PI)
 }
