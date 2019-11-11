@@ -18,7 +18,7 @@ function Dr() {
 
   var z = 0
 
-  for(z = 0; z <= nsu; z++){
+  for(z = 1; z <= nsu; z++){
   ctx.lineTo(x + Math.sin(z * 2 * Math.PI / nsu) * r, y - Math.cos(z * 2 * Math.PI / nsu) * r);
   }
 
