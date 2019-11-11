@@ -3,6 +3,8 @@ function Dr() {
   var canvas = document.getElementById('canvas');
   var ctx = canvas.getContext('2d');
 
+  ctx.clearRect(0,0,200,200);
+
   var x = 100;  // 中心点のX座標
   var y = 100;  // 中心点のY座標
   var r = 80;   // 半径
