@@ -1,7 +1,6 @@
-function timeout_callback() {
-  alert("timeout!");
+function light_print(event) {
+    var elm = document.getElementById('lighttext');
+    elm.value = event.value;
 }
 
-function timer(){
-  setTimeout(timeout_callback,10000);
-}
+window.addEventListener('devicelight', light_print);

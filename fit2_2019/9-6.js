@@ -11,6 +11,7 @@ function taipu(){
       var elem = document.getElementById("test");
       elem.innerHTML = (mozi.charAt(i));
 
+
 			i++;
 			if (i == n) {
 				clearInterval(timer_id);
