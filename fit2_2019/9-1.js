@@ -99,6 +99,6 @@ function get(week,period){
     break;
 
     default:
-    return ("授業は登録されていません")
+    return ("何もしないという仕事が入っております")
     }
   }
