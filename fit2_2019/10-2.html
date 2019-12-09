@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>タイマー</title>
+  </head>
+
+  <body>
+
+    <p class="aaa">要素1</p>
+    <p class="aaa bbb">要素2</p>
+    <p class="ccc aaa bbb">要素3</p>
+    <p class="aaa ccc bbb">要素4</p>
+    <p class="aaa bbb">要素5</p>
+
+    <button onclick="ccc()">ccc</button><br/>
+    <button onclick="ababab()">aaa&bbb</button><br/>
+    <input type="text" id="col">
+
+    <script type="text/javascript" src="https://ipl.sfc.keio.ac.jp/text/info2-2018-9/lib/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+    function ccc() {
+      $(".aaa").css("color", "black");
+      var col = document.getElementById('col').value;
+      console.log(col);
+      $(".ccc").css("color", col);
+    }
+    function ababab() {
+      $(".aaa").css("color", "black");
+      var col = document.getElementById('col').value;
+      console.log(col);
+      $(".aaa.bbb").css("color", col);
+    }
+
+    </script>
+  </body>
+
+</html>
