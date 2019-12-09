@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>mogura</title>
+  </head>
+
+  <body>
+
+    <h1>練習問題10-3</h1>
+    <button onclick="start()">スタート</button><br>
+    <p id="9">0匹目</p>
+    <table style="width: 200px;">
+      <tbody><tr>
+        <td style="text-align: center; border: 1px; border-style: solid;" id="0" onclick="(0)">🤔</td>
+        <td style="text-align: center; border: 1px; border-style: solid;" id="1" onclick="(1)">🤔</td>
+        <td style="text-align: center; border: 1px; border-style: solid;" id="2" onclick="(2)">🤔</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; border: 1px; border-style: solid;" id="3" onclick="(3)">🤔</td>
+        <td style="text-align: center; border: 1px; border-style: solid;" id="4" onclick="(4)">🤔</td>
+        <td style="text-align: center; border: 1px; border-style: solid;" id="5" onclick="(5)">🤔</td>
+      </tr>
+      <tr>
+        <td style="text-align: center; border: 1px; border-style: solid;" id="6" onclick="(6)">🤔</td>
+        <td style="text-align: center; border: 1px; border-style: solid;" id="7" onclick="(7)">🤔</td>
+        <td style="text-align: center; border: 1px; border-style: solid;" id="8" onclick="(8)">🤔</td>
+      </tr>
+    </tbody></table>
+
+    <script type="text/javascript" src="https://ipl.sfc.keio.ac.jp/text/info2-2018-9/lib/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+
+    function start(){
+
+      var timer_id;
+      var i = 1;
+      var hiki;
+      var numb = 0;
+
+      timer_id = setInterval((function(){
+
+        console.log("回数"+i);
+
+        var hikisu = Math.floor(Math.random()*8);
+
+        document.getElementById(0).innerHTML = ("🤔")
+        document.getElementById(1).innerHTML = ("🤔")
+        document.getElementById(2).innerHTML = ("🤔")
+        document.getElementById(3).innerHTML = ("🤔")
+        document.getElementById(4).innerHTML = ("🤔")
+        document.getElementById(5).innerHTML = ("🤔")
+        document.getElementById(6).innerHTML = ("🤔")
+        document.getElementById(7).innerHTML = ("🤔")
+        document.getElementById(8).innerHTML = ("🤔")
+
+          var elem = document.getElementById(hikisu);
+          elem.innerHTML = ("👿");
+//😴
+            $("#"+hikisu).click(function(){
+              numb = numb + 1;
+              console.log("中"+numb);
+            });
+          document.getElementById(9).innerHTML = (i+"匹目");
+
+          i++;
+          if (i == 11) {
+            clearInterval(timer_id);
+            alert(numb+"匹ゲット！");
+          }
+      }), 1000);
+    }
+
+    </script>
+
+  </body>
+</html>
