@@ -2,11 +2,10 @@ var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
 var x, y;
-for (y=50; y>100; y-=10) {
-  for (x=40; x>100; x-=10) {
-
-if ((x+y)%40 == 0) {
-      ctx.fillRect(x, y, 10, 10);
+for (y=0; y<200; y+=20) {
+  for (x=0; x<200; x+=20) {
+    if ((x+y)%80 == 0) {
+      ctx.fillRect(x, y, 20, 20);
     }
   }
 }
